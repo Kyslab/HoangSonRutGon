@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="">
+ 
+
+  <title> HoangSonJSC </title>
+
+
+  <!-- bootstrap core css                -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" /> 
+  
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />     
+
+  <!-- Custom styles for this template       {{ url_for('static', filename='css/responsive.css') }}        -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }} " rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid ">
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : 0946587222
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : hoangsonjsc8686@gmail.com
+              </span>
+            </a>
+            <a href="https://maps.app.goo.gl/pkH9BjtWQE6a5CGi6">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="">
+              <span>
+                CÔNG TY CP THƯƠNG MẠI VẬN TẢI HOÀNG SƠN
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('index') }}">Trang Chủ <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+            
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section     {{ url_for('static', filename='images/slider-bg.jpg') }}      -->
+    <!-- slider section -->
+    <section class="slider_section">
+      <!-- Hình nền slider_bg_box -->
+      <div class="slider_bg_box">
+        <img id="sliderBgImage" src="{{ url_for('static', filename='images/bg1.jpg') }}" alt="Background Image">
+      </div>
+    
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          
+          <!-- Slide 1 với data-bg cho ảnh nền -->
+          <div class="carousel-item active" data-bg="{{ url_for('static', filename='images/bg1.jpg') }}">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>CÔNG TY CP THƯƠNG MẠI <br> VẬN TẢI HOÀNG SƠN</h1>
+                    <p>Nằm trong top những Công ty đứng đầu trong việc cung cấp các dịch vụ vận tải hàng hóa...</p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">Tìm Hiểu Ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 2 với data-bg cho ảnh nền -->
+          <div class="carousel-item" data-bg="{{ url_for('static', filename='images/bg2.jpg') }}">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>Chợ gỗ Hoàng Sơn<br> Chợ gỗ đầu mối lớn nhất Miền Bắc</h1>
+                    <p>Chúng tôi cung cấp kho bãi để đáp ứng nhu cầu của khách hàng. Diện tích bến bãi trên 50000m2</p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">Tìm Hiểu Ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 3 với data-bg cho ảnh nền -->
+          <div class="carousel-item" data-bg="{{ url_for('static', filename='images/bg3.jpg') }}">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>DỊCH VỤ HẢI QUAN <br> Thông quan mọi loại hàng</h1>
+                    <p>Dịch vụ khai báo hải quan, giám định, kiểm dịch,Nộp thuế, hoàn thuế
+                      Thủ tục hải quan tại cửa khẩu
+                      Dịch vụ hải quan điện tử, thông quan một cửa đảm bảo tối thiểu về thời gian và chi phí</p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">Tìm Hiểu Ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+        </div>
+    
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </section>
+    
+    
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Chúng tôi cung cấp các <span>Dịch Vụ Logistics</span>
+          </h2>
+          
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/c1.png') }}" alt="">        
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Vận chuyển bằng xe Container
+                </h5>
+                <p>
+                  Công ty CP Thương mại Vận tải Hoàng Sơn hiện có hơn 20 xe đầu kéo, kéo theo Sơ mi rơ moóc sàn loại 12 mét, tải trọng hàng hóa cho phép 34 tấn và đang hợp tác với các đơn vị vận tải lớn, 
+                  <br>Chúng tôi chuyên cung cấp dịch vụ vận tải hàng rời, hàng cont bằng đường bộ trên khắp các tỉnh trong khu vực Miền Bắc và Miền Trung của Việt Nam;
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/s4.png') }}" alt="">      
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dịch Vụ nâng hạ
+                </h5>
+                <p>
+                  Công ty CP Thương mại Vận tải Hoàng Sơn đã có nhiều năm kinh nghiệm về dịch vụ nâng hạ gỗ (tròn, xẻ), hàng rời,...
+                  <br>Với 10 phương tiện nâng hạ các loại, gồm: xe ngoạm, xe nâng từ 3 tấn đến 18 tấn và kết hợp với đơn vị liên kết cung cấp dịch vụ cẩu có tải trọng lên đến 100 tấn
+                                 
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/s2.png') }}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Thông quan hàng hóa
+                </h5>
+                <p>
+                  Tại sao nên chọn dịch vụ thông quan của chúng tôi?
+
+Đội ngũ chuyên gia giàu kinh nghiệm: Đội ngũ chuyên gia của chúng tôi am hiểu sâu sắc về luật hải quan, các quy định kỹ thuật và thủ tục hải quan, luôn cập nhật những thay đổi mới nhất.
+<br>Quy trình làm việc chuyên nghiệp: Chúng tôi đã xây dựng quy trình làm việc tối ưu, đảm bảo hàng hóa được thông quan nhanh chóng, đúng hạn.
+<br>Hệ thống quản lý hiện đại: Chúng tôi sử dụng hệ thống quản lý thông tin hiện đại, giúp theo dõi và quản lý quá trình thông quan một cách hiệu quả.
+
+<br>Chi phí cạnh tranh: Chúng tôi cam kết cung cấp dịch vụ với chi phí cạnh tranh nhất trên thị trường.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/s4.png') }}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dịch Vụ Kho bãi
+                </h5>
+                <p>
+                  Với diện tích hơn 50.000 m2, gồm: các kho, lán và bãi trống, Công ty CP Thương mại Vận tải Hoàng Sơn đã và đang cung cấp tới Khách hàng dịch vụ kho bãi chứa gỗ (tròn + xẻ) các loại;
+                  <br>Kho bãi có đầy đủ các trang thiết bị hiện đại, hệ thống đèn điện, hệ thống camera giám sát 24/24, đội ngũ bảo vệ trông coi 24/24, hàng hoá khi để tại kho sẽ được đảm bảo an toàn tuyệt đối;
+                  <br>Khi sử dụng dịch vụ kho bãi của chúng tôi, Khách hàng sẽ đồng thời được hưởng những dịch vụ sau đây:
+                  <br>&nbsp&nbsp-   Dịch vụ quản lý xuất – nhập và lưu trữ hàng hóa;
+                  <br>&nbsp&nbsp-   Dịch vụ vận tải phân phối hàng đến người mua sau cùng;
+                  <br>&nbsp&nbsp-   Dịch vụ sắp xếp, tháo dỡ hàng hóa ra vào kho;
+                  <br>&nbsp&nbsp-   Dịch vụ kiểm đếm hàng hóa;   
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Về <span>Công ty</span>
+              </h2>
+            </div>
+            <p>
+              &nbsp;&nbsp; Được thành lập từ năm 2002, Công ty CP Thương mại Vận tải Hoàng Sơn đã có những bước tiến vượt trội 
+              và đạt được những thành tựu nhất định. 
+              <br><br>&nbsp;&nbsp; Chúng tôi tự hào là một Công ty chuyên nghiệp trong cung ứng các dịch vụ như: vận tải hàng hóa bằng xe container
+              , giao nhận, dịch vụ hải quan, dịch vụ kho bãi,... Chúng tôi luôn hướng đến mục tiêu “Không ngừng hoàn thiện và nâng cấp chất lượng các dịch vụ cung ứng”, 
+      <br><br>&nbsp;&nbsp; Công ty Cổ phần Thương mại Vận tải Hoàng Sơn luôn nỗ lực hết mình trong từng bước và mọi hoạt động để đáp ứng mọi sự quan tâm của Khách hàng;
+      Bằng kiến thức, sự sáng tạo, lòng nhiệt huyết cũng như kinh nghiệm của mình, toàn thể cán bộ công nhân viên chúng tôi cam kết sẽ luôn là đối tác hỗ trợ tối đa nhu cầu sử dụng các dịch vụ nói trên của Khách hàng;
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            
+            <img src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- track section -->
+
+  <section class="track_section layout_padding">
+    <div class="track_bg_box">
+      <img src="{{ url_for('static', filename='images/track-bg.jpg') }}" alt="">      
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Tra cứu đơn hàng
+            </h2>
+          </div>
+          <p>
+            Tra cứu đơn hàng của bạn một cách nhanh chóng, nhập mã tra cứu ngay :
+
+          </p>
+          <form action="">
+            <input type="text" placeholder="Enter Your Tracking Number" />
+            <button type="submit">
+              Tra cứu
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end track section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Khách hàng <span>Nói gì</span>
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Dịch vụ của công ty thực sự chuyên nghiệp và tận tâm. Tôi rất ấn tượng với cách mà các bạn đã hỗ trợ tôi trong suốt quá trình làm việc.
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="{{ url_for('static', filename='images/client-1.png') }}" alt="" class="img-1">    
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Xưởng gỗ
+                    </h6>
+                    <p>
+                      Tiến Cao
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Tôi đánh giá cao sự nhanh chóng và hiệu quả trong việc giải quyết các vấn đề của khách hàng. Công ty thực sự đặt nhu cầu của khách hàng lên hàng đầu
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="{{ url_for('static', filename='images/client-2.png') }}" alt="" class="img-1">     
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Nhà Thầu
+                    </h6>
+                    <p>
+                      Hưng
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Công ty là một đối tác đáng tin cậy của tôi. Tôi rất hài lòng với sự hợp tác này.
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="{{ url_for('static', filename='images/client-1.png') }}" alt="" class="img-1"> 
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Min
+                    </h6>
+                    <p>
+                      Đông
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Nhân viên của công ty rất thân thiện, nhiệt tình và luôn sẵn sàng hỗ trợ khách hàng. Tôi cảm thấy rất thoải mái khi làm việc với các bạn.
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="{{ url_for('static', filename='images/client-2.png') }}" alt="" class="img-1">
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Adipiscing
+                    </h6>
+                    <p>
+                      Tony
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <section class="contact_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="heading_container">
+            <h2>
+              Contact Us
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container contact-form">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <div class="map">
+              <iframe
+                width=100%
+                height=100%
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps?q=20.8270848,106.764288&hl=vi&z=12&output=embed">
+              </iframe>
+            </div>
+          </div>
+<!--           
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/pkH9BjtWQE6a5CGi6">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call 0946587222
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  hoangsonjsc8686@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Công ty luôn không ngừng sáng tạo và đổi mới. Các sản phẩm/dịch vụ của công ty luôn đi đầu xu hướng.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="{{ url_for('index') }}">
+                Home
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Kyslab</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section            {{ url_for('static', filename='js/custom.js') }}     -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5q7piu9fg6oXyeDqytqO7LctDGyCWx0M&callback=myMap">
+
+  </script>
+  <!-- End Google Map -->
+  <script>
+    // Bắt sự kiện khi carousel chuyển slide
+    $('#customCarousel1').on('slide.bs.carousel', function (event) {
+      // Lấy URL ảnh nền mới từ thuộc tính data-bg của slide
+      var newBgImage = $(event.relatedTarget).attr('data-bg');
+      
+      // Thay đổi thuộc tính src của ảnh trong slider_bg_box
+      $('#sliderBgImage').attr('src', newBgImage);
+    });
+
+  
+  // Thêm hỗ trợ cho dropdown nhiều cấp
+
+    $('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
+      var $submenu = $(this).next('.dropdown-menu');
+      
+      // Hiệu ứng mượt
+      $submenu.toggleClass('show').slideToggle(300);
+      
+      e.stopPropagation();
+      e.preventDefault();
+    });
+
+  </script>
+  
+</body>
+
+</html>
